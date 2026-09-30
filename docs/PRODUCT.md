@@ -28,10 +28,8 @@ running core work from spreadsheets, inboxes, and disconnected tools.
 
 ### Vision
 
-Every small accounting firm runs its client relationships and client work from
-one trusted record, where no deadline, recurring job, or client request is lost
-to a spreadsheet, an inbox, or someone's memory — and any staff member can pick
-up any client without a handover.
+Every small accounting and tax firm delivers every client's work on time, from
+one trusted record that any staff member can pick up without a handover.
 
 ### Problem Statement
 
@@ -150,6 +148,8 @@ accounts.
 - **Firm onboarding** — guided setup and bulk import from existing
   spreadsheets, so a firm moves off spreadsheets without re-typing its client
   list.
+
+## 3A. Decision Placeholders
 
 ## 4. Scope (In / Out)
 
@@ -277,3 +277,7 @@ Each item below is out of scope until PRODUCT.md is updated to move it in.
 - **Building one country into the core** — the core product MUST NOT hard-code
   any country's tax terms, forms, or deadlines; region-neutral is a product
   decision.
+
+## 7. Roadmap
+
+## Glossary
