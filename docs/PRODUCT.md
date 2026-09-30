@@ -255,6 +255,30 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
   files, with a preview before saving and undo.
 - **No-chase automation** — firm-defined workflow rules.
 
+
+### Wish-list (not committed)
+
+Each item below is out of scope until PRODUCT.md is updated to move it in. Moving one in
+needs a named problem for a §2 persona.
+
+- Client mobile app — requires a client login, which the product currently
+  excludes; revisit §2 and the no-login decision first.
+- Client portal with a login — client contacts use only emails and request links today;
+  revisit together with the Client mobile app, which needs the same login.
+- Household and family links — grouping Individuals, such as spouses filing jointly or a
+  parent and dependants.
+- Guardian, trust, and custodial workflows.
+- E-signature.
+- Multi-location and branch support — the firms CuevikFlow starts with operate as one
+  unit; larger firms may need it.
+- Proposal to engagement — a proposal sets out services and fees; when the prospect
+  accepts it (see E-signature), it becomes an Engagement and the Prospect becomes a Client.
+- Time and billing — time logged against jobs and tasks, and invoices raised from jobs and
+  time.
+- Integrations — accounting-software connection and two-way calendar sync with Google and
+  Microsoft 365.
+- Staff mobile apps — installable mobile apps for firm staff.
+
 ### Out of scope
 
 Permanently excluded — not deferred. Each carries the reason it stays out, so the decision
@@ -287,29 +311,6 @@ does not get re-argued; anything that might come in later belongs on the Wish-li
 - Bookkeeping ledgers and lodging returns with tax authorities — the firm's accounting and
   tax software remain the system of record.
 
-### Wish-list (not committed)
-
-Each item below is out of scope until PRODUCT.md is updated to move it in. Moving one in
-needs a named problem for a §2 persona.
-
-- Client mobile app — requires a client login, which the product currently
-  excludes; revisit §2 and the no-login decision first.
-- Client portal with a login — client contacts use only emails and request links today;
-  revisit together with the Client mobile app, which needs the same login.
-- Household and family links — grouping Individuals, such as spouses filing jointly or a
-  parent and dependants.
-- Guardian, trust, and custodial workflows.
-- E-signature.
-- Multi-location and branch support — the firms CuevikFlow starts with operate as one
-  unit; larger firms may need it.
-- Proposal to engagement — a proposal sets out services and fees; when the prospect
-  accepts it (see E-signature), it becomes an Engagement and the Prospect becomes a Client.
-- Time and billing — time logged against jobs and tasks, and invoices raised from jobs and
-  time.
-- Integrations — accounting-software connection and two-way calendar sync with Google and
-  Microsoft 365.
-- Staff mobile apps — installable mobile apps for firm staff.
-
 ## 5. Success Criteria
 
 ### Thin-Core Release Outcomes (Committed)
@@ -317,15 +318,31 @@ needs a named problem for a §2 persona.
 - **Recurrence reliability** — 100% of scheduled Job occurrences are created on
   their scheduled date; zero missed generations per month, measured from system
   records.
-- **On-time delivery** — after 90 days of use, at least 95% of a firm's Jobs are
-  completed on or before their due date.
+- **On-time delivery** — the firm's on-time %, measured against each Job's original due
+  date, is higher in weeks 9–12 of live use than in weeks 1–4, measured from system
+  records.
 - **Owner visibility** — from day 30, the owner or a manager opens the firm-wide dashboard
   in at least 3 of every 4 weeks, measured from system records.
 - **Spreadsheet replacement** — by day 60, the firm confirms it no longer uses a
-  spreadsheet or inbox to track client jobs, and at least 80% of its staff use
+  spreadsheet to track client jobs, and at least 80% of its staff use
   CuevikFlow in any given week.
 - **Commercial** — 10 firms on paid subscriptions within 6 months of general
   availability, with monthly firm churn at or below 3%.
+
+### Structural Criteria (Verifiable Before Launch)
+
+Binary properties — true or false on any build, with no adoption data required.
+
+- **Each firm's data is isolated** — no request from one firm returns another firm's
+  records.
+- **Permissions hold outside the screen** — a role restriction denies a direct request for
+  a record, not merely hides the control that would have made it.
+- **Review cannot be skipped** — a Job whose template requires review cannot reach
+  Complete without sign-off by a Manager or Owner other than the person who did the work.
+- **A firm's templates change only by its own action** — a starter-library update never
+  changes a firm's copy.
+- **A moved due date stays visible** — changing a Job's due date keeps the original date
+  and records the change, who made it, and when.
 
 ### Post-Thin-Core Outcomes (Roadmap Targets)
 
