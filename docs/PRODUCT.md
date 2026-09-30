@@ -408,10 +408,17 @@ Binary properties — true or false on any build, with no adoption data required
   detection), Communication center (two-way email sync), at-risk Jobs in Firm work at a
   glance, Firm-defined fields, and No-chase automation.
 
+### Vertical
+
+CuevikFlow is built for accounting and tax firms. Whether it fits other professional
+practices, such as law firms, is an open question with nothing planned, and is not a
+reason to generalise the product now. Taking on another profession needs a PRODUCT.md
+update first.
+
 ### Markets
 
-The core is region-neutral (§6). CuevikFlow launches in Australia first. India, Denmark,
-and the USA are candidate later markets, in no set order; each opens only after the
+The core is region-neutral (§6). CuevikFlow launches in Australia first. Later markets
+follow paying demand: a market opens where paying firms are ready, and only after the
 product meets that market's privacy law (§6).
 
 ### Validation
