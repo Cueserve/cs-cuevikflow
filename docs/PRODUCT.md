@@ -108,7 +108,7 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 
 > Features describe the full product model, including roadmap intent. Only §4 "In scope —
 > thin-core release" is committed. Each feature is tagged: _Thin-core_ is committed in full,
-> _Thin-core (basic)_ is committed only at the depth §4 states, and _Roadmap_ is not
+> _Thin-core (partial)_ is committed only in the part §4 states, and _Roadmap_ is not
 > committed.
 
 - **Client relationships** _(Thin-core)_ — one record per lead, prospect, and client
@@ -131,11 +131,11 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
   that client contacts answer through a link without logging in, with automatic
   reminders to the client until answered and files kept against the client and
   job, replacing email chasing and scattered attachments.
-- **Client communication** _(Thin-core (basic))_ — templated email to client contacts, with every
+- **Client communication** _(Thin-core (partial))_ — templated email to client contacts, with every
   message, request, call, meeting, and note logged against the client, and
   two-way email with replies filed automatically by AI, so the firm's full history with a
   client is in one place.
-- **Work visibility and reporting** _(Thin-core (basic))_ — personal and firm-wide dashboards
+- **Work visibility and reporting** _(Thin-core (partial))_ — personal and firm-wide dashboards
   (deadlines, overdue work, at-risk jobs, team workload) plus exportable reports
   on deadline compliance, workload, and throughput over time, so owners see
   both today's state and the trend.
