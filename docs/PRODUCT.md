@@ -231,7 +231,7 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 > document, including the roadmap below and every §3 feature tagged Roadmap, is intent and
 > becomes commitment only when promoted into an approved PRD.
 
-### Planned roadmap after thin-core (timing TBD)
+### Planned roadmap after thin-core (order in §7)
 
 - **Zero-leak inquiry capture** — a web inquiry form that creates exactly one Lead per
   submission, with none dropped; manual logging of phone, email, and walk-in inquiries;
@@ -396,6 +396,33 @@ Binary properties — true or false on any build, with no adoption data required
   decision.
 
 ## 7. Roadmap
+
+### Release sequence
+
+- **Thin-core** — every §3 feature tagged Thin-core or Thin-core (partial), as §4 commits.
+  Gate to Next: the §5 thin-core outcomes hold for the first firms.
+- **Next** — No-login client requests, Spreadsheet-to-live onboarding, Zero-leak inquiry
+  capture, and the exportable reports in Firm work at a glance. Gate to Later: the Time to
+  value and Client request turnaround outcomes (§5) hold.
+- **Later** — Human-approved AI, Deadline early warning (which uses its at-risk
+  detection), Communication center (two-way email sync), at-risk Jobs in Firm work at a
+  glance, Firm-defined fields, and No-chase automation.
+
+### Markets
+
+The core is region-neutral (§6). CuevikFlow launches in Australia first. India, Denmark,
+and the USA are candidate later markets, in no set order; each opens only after the
+product meets that market's privacy law (§6).
+
+### Validation
+
+The first Australian firms exercise each release before the next starts:
+
+- **Thin-core** — recurring Jobs from templates with relative due dates, review sign-off,
+  and the firm-wide view (Work-to-deadline tracking, Reusable job templates, Four-eyes
+  sign-off, Firm work at a glance).
+- **Next** — client document requests and spreadsheet import (No-login client requests,
+  Spreadsheet-to-live onboarding).
 
 ## Glossary
 
