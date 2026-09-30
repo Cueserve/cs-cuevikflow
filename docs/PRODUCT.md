@@ -87,8 +87,8 @@ payroll, periodic tax filings, and year-end accounts. It starts with small firms
 the least capacity for heavy setup; firm size is the starting point, not the limit.
 
 > These are roles, not headcount: in a small firm one person may be owner, manager, and staff
-> at once. Owner, Manager, and Staff are CuevikFlow's three access roles; a client contact has
-> no role and never logs in.
+> at once. Owner, Manager, and Staff are CuevikFlow's three role-based access control (RBAC)
+> roles; a client contact has no role and never logs in.
 
 - **Firm owner / partner** — cannot see which jobs are overdue or at risk, or
   which leads and prospects are going cold, without asking staff; carries the
