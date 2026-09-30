@@ -33,19 +33,29 @@ one trusted record that any staff member can pick up without a handover.
 
 ### Problem Statement
 
-Accounting firms of 2–20 staff track their clients, the people behind those
-clients, and their recurring work across spreadsheets, email inboxes, shared
-drives, and staff memory. As a result:
+Small accounting and tax firms struggle because their client records and
+operational work are fragmented across spreadsheets, email threads, shared
+drives, and staff memory. Deadlines are tracked manually, recurring work is
+rebuilt every cycle, and client documents arrive inconsistently as email
+attachments or ad-hoc uploads. Owners and managers lack visibility into
+workload, overdue work-items, bottlenecks and at-risk jobs.
 
-- Owners cannot see which jobs are overdue or at risk until a client or a
-  regulator raises it.
-- Recurring jobs are re-created by hand each period, so a missed setup becomes
-  a missed deadline.
-- Staff chase clients for documents and information by email, with no record of
-  what was asked, when, or what came back.
-- Knowledge of which people act for which client organisations, and what was
-  last discussed, sits with individual staff; absence or turnover stalls work.
-- Clients receive repeated and inconsistent requests for the same information.
+A firm of 2–20 staff has no spare capacity to model workflows, build templates,
+or retrain the team before a tool pays back, so practice-management software
+that front-loads that setup gets abandoned for the spreadsheet. Small firms
+need operational control without heavyweight process.
+
+Closing those gaps has to be backed by software the team can trust —
+specifically:
+
+- One complete record — every request, reply, and document is logged against
+  the client, so any staff member can pick up the work without a handover.
+- Recurring jobs and their deadlines appear on schedule every time, without
+  anyone remembering to set them up.
+- What the firm sets is what runs — templates, due dates, and records change
+  only by the firm's own action, and every change shows who made it and when.
+- AI assists but never acts alone — nothing reaches a client, changes a record,
+  or becomes a figure the firm relies on without staff review.
 
 ### Objective
 
