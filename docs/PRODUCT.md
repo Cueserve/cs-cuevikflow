@@ -202,26 +202,30 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 
 ### In scope — thin-core release (committed)
 
-- Leads, prospects, and clients as organisations or individuals, moving through
-  Lead → Prospect → Client → Inactive or Archived; likely duplicates flagged when a record
-  is created.
-- People linked to the organisations they act for; organisations linked to
-  related organisations.
-- Engagements as one-time service contracts; one-off and recurring Jobs; Task
-  checklists. Each Job carries a status from a fixed set: Not started, In progress, Waiting
-  on client, In review, Complete. Engagements are optional by default; a firm MAY make them
-  mandatory.
-- Firm-owned Engagement and Job templates that set a Job's Task checklist, recurrence,
-  due dates relative to the period it covers, and whether it requires review; a region-neutral Cuevik starter library
-  that firms copy; copies are never synced after copying.
-- Basic file upload and download on clients and jobs.
-- Templated outbound email to client contacts; a per-client communication log.
-- Comments, @mentions, and in-app notifications; review and sign-off by a Manager or
-  Owner other than the preparer, on Jobs whose template requires it.
-- Personal and firm-wide dashboards: every Job's status, upcoming deadlines, a list of
-  past-due jobs, and team workload.
-- Owner, Manager, and Staff roles; role-based and field-level access; an audit
-  trail.
+- **Complete client record** — Leads, Prospects, and Clients as Organisations or
+  Individuals, moving through Lead → Prospect → Client → Inactive or Archived; people
+  linked to the Organisations they act for, and Organisations to related Organisations;
+  Engagements, Jobs, files, and messages attached; likely duplicates flagged when a record
+  is created; basic file upload and download on clients and Jobs.
+- **Work-to-deadline tracking** — one-off and recurring Jobs with due dates and a fixed
+  status set (Not started, In progress, Waiting on client, In review, Complete); Task
+  checklists assigned to staff with due dates; each recurring occurrence created on
+  schedule; past-due Jobs marked; Engagements optional by default, and a firm MAY make them
+  mandatory; comments, @mentions, and in-app notifications.
+- **Four-eyes sign-off** — review and sign-off, or send-back, by a Manager or Owner other
+  than the preparer, recorded, on Jobs whose template requires it.
+- **Reusable job templates** — firm-owned Engagement and Job templates that set a Job's
+  Task checklist, recurrence, due dates relative to the period it covers, and whether it
+  requires review; a region-neutral Cuevik starter library that firms copy; copies are
+  never synced after copying.
+- **Communication center** (thin-core part) — templated outbound email to client
+  contacts, logged automatically; a per-client log where staff record calls, meetings, and
+  notes by hand.
+- **Firm work at a glance** (thin-core part) — personal and firm-wide views: every Job's
+  status, upcoming deadlines, a list of past-due Jobs, and team workload.
+- **Need-to-see access** — Owner, Manager, and Staff roles; role-based and field-level
+  access enforced by the system; each firm's data isolated from every other firm's; an
+  audit trail.
 
 > **Commitment rule:** This section is the only committed scope. Everything else in this
 > document, including the roadmap below and every §3 feature tagged Roadmap, is intent and
@@ -229,50 +233,59 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 
 ### Planned roadmap after thin-core (timing TBD)
 
-- A web inquiry form that creates exactly one Lead per submission, with none dropped;
-  manual logging of phone, email, and walk-in inquiries; matching an inquiry to an existing
-  client or Lead instead of creating a duplicate.
-- AI-assisted deadline warnings to assignees and escalation to managers as due dates
-  approach or pass.
-- No-login link requests for client documents and information through secure, expiring
-  links, with automatic reminders to client contacts until answered.
-- Guided setup and bulk import from CSV and Excel files.
-- Firm-defined workflow automation rules.
-- Two-way email sync that files mail from known contacts by address; AI suggests the client
-  for unknown senders, and staff confirm.
-- Exportable reports on deadline compliance, workload, and throughput over time.
-- AI: at-risk job detection (and at-risk jobs on dashboards), assignee suggestions,
-  upload classification, extraction of client-document data into firm-defined outputs,
-  and summaries and drafts. Staff review all AI output before use.
-- Custom fields and firm-defined Job statuses.
-- Firm branding on client-facing emails and request links.
+- **Zero-leak inquiry capture** — a web inquiry form that creates exactly one Lead per
+  submission, with none dropped; manual logging of phone, email, and walk-in inquiries;
+  matching an inquiry to an existing client or Lead instead of creating a duplicate.
+- **Deadline early warning** — AI-assisted warnings to assignees and escalation to
+  managers as due dates approach or pass.
+- **No-login client requests** — secure, expiring request links for client documents and
+  information, with automatic reminders until answered; firm branding on request links and
+  their emails.
+- **Communication center** (beyond thin-core) — two-way email sync that files mail from
+  known contacts by address; AI suggests the client for unknown senders, and staff confirm.
+- **Firm work at a glance** (beyond thin-core) — at-risk Jobs; exportable reports on
+  deadline compliance, workload, and throughput over time.
+- **Human-approved AI** — at-risk Job detection, assignee suggestions, upload sorting,
+  extraction of client-document data into firm-defined outputs, client suggestions for
+  unfiled email, and drafted summaries and messages; flags are advisory, and everything
+  else waits for staff to accept it.
+- **Firm-defined fields** — custom fields on clients, Jobs, and Tasks, and firm-defined Job
+  statuses.
+- **Spreadsheet-to-live onboarding** — guided setup and bulk import from CSV and Excel
+  files, with a preview before saving and undo.
+- **No-chase automation** — firm-defined workflow rules.
 
 ### Out of scope
 
-- Cuevik-maintained or jurisdiction-specific compliance templates, deadline
-  libraries, or regulatory updates — the starter library is region-neutral and
-  copy-on-use; Cuevik takes on no per-country content obligation.
-- Tax calculations on CuevikFlow's own authority — AI extraction fills
-  firm-defined outputs; the firm owns every formula.
-- Client portal with a login — client contacts interact only through emails and
-  request links (client mobile app: see Wish-list).
-- Full document management (folders, versioning, in-app preview, retention
-  policies) — files attach to clients and jobs only.
-- Person-to-person and family links.
-- Internal team chat, Short Message Service (SMS) text messaging, and video calls — team discussion stays on jobs and
-  tasks; client contact stays on email and links.
-- Marketing: campaigns, newsletters, surveys, and referral or upsell programmes
-  — CuevikFlow manages relationships and work, not marketing.
-- Payment collection — payments are handled outside CuevikFlow.
-- Tax-software integration.
-- White-label (custom domains, removing Cuevik branding) — firm branding on
-  emails and links is on the roadmap.
-- Knowledge base, document co-editing, whiteboards, and staff training.
-- Process mining and robotic process automation (RPA).
-- The firm's own human resources (HR), payroll, and finances.
-- Guardian, trust, and custodial workflows.
-- Bookkeeping ledgers and lodging returns with tax authorities — the firm's
-  accounting and tax software remain the system of record.
+Permanently excluded — not deferred. Each carries the reason it stays out, so the decision
+does not get re-argued; anything that might come in later belongs on the Wish-list.
+
+- Cuevik-maintained or jurisdiction-specific compliance templates, deadline libraries, or
+  regulatory updates — the starter library is region-neutral and copy-on-use; Cuevik takes
+  on no per-country content obligation.
+- Tax calculations on CuevikFlow's own authority — AI extraction fills firm-defined
+  outputs; the firm owns every formula.
+- Full document management (folders, versioning, in-app preview, retention policies) —
+  firms keep their existing document store; CuevikFlow holds only files attached to its
+  clients and Jobs.
+- Internal team chat, Short Message Service (SMS) text messaging, and video calls — team
+  discussion stays on Jobs and Tasks; client contact stays on email and links.
+- Marketing: campaigns, newsletters, surveys, and referral or upsell programmes —
+  CuevikFlow manages relationships and work, not marketing.
+- Payment collection — handling payments would bring payment-security and reconciliation
+  obligations unrelated to delivering client work.
+- Tax-software integration — tax software differs by country, so integrating it would
+  build one country into the core (§6).
+- White-label (custom domains, removing Cuevik branding) — the product stays
+  Cuevik-branded; firm branding on client-facing messages is on the roadmap.
+- Knowledge base, document co-editing, whiteboards, and staff training — firms use
+  dedicated tools for these; none of them moves client work forward.
+- Process mining and robotic process automation (RPA) — enterprise automation;
+  No-chase automation covers the hand-offs a firm needs.
+- The firm's own human resources (HR), payroll, and finances — CuevikFlow runs client
+  work, not the firm's back office.
+- Bookkeeping ledgers and lodging returns with tax authorities — the firm's accounting and
+  tax software remain the system of record.
 
 ### Wish-list (not committed)
 
@@ -281,6 +294,11 @@ needs a named problem for a §2 persona.
 
 - Client mobile app — requires a client login, which the product currently
   excludes; revisit §2 and the no-login decision first.
+- Client portal with a login — client contacts use only emails and request links today;
+  revisit together with the Client mobile app, which needs the same login.
+- Household and family links — grouping Individuals, such as spouses filing jointly or a
+  parent and dependants.
+- Guardian, trust, and custodial workflows.
 - E-signature.
 - Multi-location and branch support — the firms CuevikFlow starts with operate as one
   unit; larger firms may need it.
