@@ -1,25 +1,28 @@
 # PRODUCT.md — Product Concept
 
-**Owner:** Product Owner
-**Last updated:** 2026-09-29
-**Source of truth for:** what CuevikFlow is, who it serves, and where its scope ends
+**Owner:** Viral Parikh
+**Last updated:** 2026-09-30
+**Source of truth for:** what CuevikFlow is, why it exists, who it serves, and its intended scope — an
+AI-assisted platform that gives small accounting and tax firms a single workspace to keep a trusted
+record of each client and its jobs, deadlines, documents, and communication, so they can stop
+running core work from spreadsheets, inboxes, and disconnected tools.
 
 > Derived from: (none — starting point)
-> Downstream: docs/PRD.md, README.md, docs/BACKLOG.md
-
-## Document References
-
-| # | Document | Role |
-| --- | --- | --- |
-| 1 | PRODUCT.md | What we are building and why |
-| 2 | PRD.md | Testable requirements |
-| 3 | ARCHITECTURE.md | System structure & design decisions |
-| 4 | TECH-STACK.md | Approved technologies & usage rules |
-| 5 | AI-TOOL-GUIDE.md | Rules & constraints for AI tools |
-| 6 | README.md | Setup, env config, how to run |
-| 7 | BACKLOG.md | Epics/stories manifest |
+> Downstream: README.md, docs/PRD.md
 
 ---
+
+## Contents
+
+- [1. Overview](#1-overview)
+- [2. Target Users](#2-target-users)
+- [3. Features](#3-features)
+- [3A. Decision Placeholders](#3a-decision-placeholders)
+- [4. Scope (In / Out)](#4-scope-in-out)
+- [5. Success Criteria](#5-success-criteria)
+- [6. Anti-Patterns](#6-anti-patterns)
+- [7. Roadmap](#7-roadmap)
+- [Glossary](#glossary)
 
 ## 1. Overview
 
