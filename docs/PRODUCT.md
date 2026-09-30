@@ -59,10 +59,16 @@ specifically:
 
 ### Objective
 
-CuevikFlow gives a small accounting firm one record of its leads, prospects, and
-client organisations, the people linked to them, and all client work — one-off
-and recurring. It MUST let the firm meet deadlines, collect what it needs from
-clients, and let the owner see the state of every job without asking anyone.
+CuevikFlow must let a small accounting firm (2–20 staff):
+
+- **Deliver client work on time** — Jobs are completed on or before their due dates
+  (§5: On-time delivery).
+- **Get what it needs from clients without chasing** — documents and information come back
+  through request links, not email attachments (§5: Client request turnaround).
+- **See every job without asking** — the owner sees the state of every job, deadline, and
+  person's workload on the firm-wide dashboard (§5: Owner visibility).
+- **Leave the spreadsheet behind** — the firm sets itself up without Cuevik help and runs
+  its client work in CuevikFlow alone (§5: Time to value, Spreadsheet replacement).
 
 ### Description
 
@@ -248,6 +254,8 @@ Each item below is out of scope until PRODUCT.md is updated to move it in.
 - **Client request turnaround** — at least 80% of link requests are fully
   answered through the link (no email attachments); median time from sent to
   answered is 5 days or less.
+- **Owner visibility** — from day 30, the owner or a manager opens the firm-wide dashboard
+  in at least 3 of every 4 weeks, measured from system records.
 - **Spreadsheet replacement** — by day 60, the firm confirms it no longer uses a
   spreadsheet or inbox to track client jobs, and at least 80% of its staff use
   CuevikFlow in any given week.
