@@ -3,7 +3,7 @@
 **Owner:** Viral Parikh
 **Last updated:** 2026-09-30
 **Source of truth for:** what CuevikFlow is, why it exists, who it serves, and its intended scope — an
-AI-assisted platform that gives small accounting and tax firms a single workspace to keep a trusted
+AI-assisted platform that gives accounting and tax firms a single workspace to keep a trusted
 record of each client and its jobs, deadlines, documents, and communication, so they can stop
 running core work from spreadsheets, inboxes, and disconnected tools.
 
@@ -28,7 +28,7 @@ running core work from spreadsheets, inboxes, and disconnected tools.
 
 ### Vision
 
-Every small accounting and tax firm delivers every client's work on time, from
+Every accounting and tax firm delivers every client's work on time, from
 one trusted record that any staff member can pick up without a handover.
 
 ### Problem Statement
@@ -40,7 +40,7 @@ rebuilt every cycle, and client documents arrive inconsistently as email
 attachments or ad-hoc uploads. Owners and managers lack visibility into
 workload, overdue work-items, bottlenecks and at-risk jobs.
 
-A firm of 2–20 staff has no spare capacity to model workflows, build templates,
+A small firm has no spare capacity to model workflows, build templates,
 or retrain the team before a tool pays back, so practice-management software
 that front-loads that setup gets abandoned for the spreadsheet. Small firms
 need operational control without heavyweight process.
@@ -59,7 +59,7 @@ specifically:
 
 ### Objective
 
-CuevikFlow must let a small accounting firm (2–20 staff):
+CuevikFlow must let an accounting or tax firm:
 
 - **Deliver client work on time** — Jobs are completed on or before their due dates
   (§5: On-time delivery).
@@ -82,9 +82,13 @@ staff review every output before use.
 
 ## 2. Target Users
 
-CuevikFlow is for accounting and tax firms of 2–20 staff that deliver recurring
-client work such as bookkeeping, payroll, periodic tax filings, and year-end
-accounts.
+CuevikFlow is for accounting and tax firms that deliver recurring client work — bookkeeping,
+payroll, periodic tax filings, and year-end accounts. It starts with small firms, which have
+the least capacity for heavy setup; firm size is the starting point, not the limit.
+
+> These are roles, not headcount: in a small firm one person may be owner, manager, and staff
+> at once. Owner, Manager, and Staff are CuevikFlow's three access roles; a client contact has
+> no role and never logs in.
 
 - **Firm owner / partner** — cannot see which jobs are overdue or at risk, or
   which leads and prospects are going cold, without asking staff; carries the
@@ -207,7 +211,6 @@ accounts.
 - Full document management (folders, versioning, in-app preview, retention
   policies) — files attach to clients and jobs only.
 - Person-to-person and family links.
-- Multi-location and branch support — firms of 2–20 staff operate as one unit.
 - Internal team chat, Short Message Service (SMS) text messaging, and video calls — team discussion stays on jobs and
   tasks; client contact stays on email and links.
 - Marketing: campaigns, newsletters, surveys, and referral or upsell programmes
@@ -231,6 +234,8 @@ Each item below is out of scope until PRODUCT.md is updated to move it in.
 - Client mobile app — requires a client login, which the product currently
   excludes; revisit §2 and the no-login decision first.
 - E-signature.
+- Multi-location and branch support — the firms CuevikFlow starts with operate as one
+  unit; larger firms may need it.
 
 ## 5. Success Criteria
 

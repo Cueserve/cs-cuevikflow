@@ -1,6 +1,6 @@
 # CuevikFlow
 
-> An AI-assisted platform that gives small accounting and tax firms a single workspace to keep a trusted record of each client and its jobs, deadlines, documents, and communication, so they can stop running core work from spreadsheets, inboxes, and disconnected tools.
+> An AI-assisted platform that gives accounting and tax firms a single workspace to keep a trusted record of each client and its jobs, deadlines, documents, and communication, so they can stop running core work from spreadsheets, inboxes, and disconnected tools.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.x-black.svg)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.x-61dafb.svg)](https://react.dev/)
