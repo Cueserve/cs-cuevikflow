@@ -357,31 +357,40 @@ Binary properties — true or false on any build, with no adoption data required
 
 ## 6. Anti-Patterns
 
-- **Features that serve a single tenant** — client-specific requests MUST ship
-  as configuration of a shared capability or as a general feature; revisiting
-  this requires paying demand and a PRODUCT.md update first.
-- **Treating client personal data as ordinary app data** — each firm's data
-  MUST be isolated from other firms, and the product MUST meet the privacy law
-  of each market before firms in that market use it.
-- **Forcing structure onto simple work** — a one-off Job MUST NOT require an
-  Engagement, template, or extra setup unless the firm has chosen to require it;
-  heavy setup drives small firms back to spreadsheets.
-- **AI output that bypasses staff** — AI MUST NOT send anything to a client,
-  change a record, or produce a figure the firm relies on without staff review;
-  the firm carries the professional liability.
+- **Serving one customer in shared code** — a need one firm has MUST be met through that
+  firm's configuration first; if configuration cannot meet it and no other firm would use
+  it, it MUST be built as an isolated client slice (its own page or module, switched on for
+  that firm only), never as a firm-specific branch in shared code and never as a fork.
+  Shared code that bends to one customer becomes a product no one else can use.
+- **Treating customer personal data as ordinary app data** — each firm's data MUST be
+  isolated from every other firm's, and the product MUST meet the privacy law of each
+  market before firms in that market use it. Client records hold tax and financial data; a
+  leak ends the firm's trust, and ours.
+- **AI that acts without a person** — AI MUST NOT send anything to a client, change a
+  record, or produce a figure the firm relies on until staff accept it; flags are advisory.
+  The firm carries the professional liability.
+- **Forcing structure onto simple work** — a one-off Job MUST NOT require an Engagement,
+  template, or extra setup unless the firm has chosen to require it; configuration is
+  optional depth, never a prerequisite to start. Heavy setup drives small firms back to
+  spreadsheets.
+- **Hiding slippage** — a due date moved after a Job is created MUST remain visible as a
+  change, and on-time rates MUST be measured against the original date; otherwise on-time
+  rates look healthy while deadlines slip.
+- **Reminder noise** — reminders, warnings, and notifications SHOULD reach only someone who
+  can act on them and stop once the action is done; alerts staff learn to ignore are worse
+  than none.
+- **Features without a named user problem** — every capability MUST trace to a problem a
+  §2 persona has; a feature that cannot name one goes on the Wish-list, not the roadmap.
+- **Trading the core guarantee for polish** — recurring Jobs and their due dates MUST be
+  created on schedule every time; reliable recurrence beats new surface area, because a
+  missed recurring Job is the failure this product exists to prevent.
 - **Changing a firm's data or templates without its action** — Cuevik MUST NOT
   alter a firm's templates, due dates, or records on its own initiative,
   including through starter-library updates; the firm must trust that what it
   set is what runs.
-- **Hiding slippage** — a due date moved after a Job is created MUST remain
-  visible as a change; otherwise on-time rates look healthy while deadlines
-  slip.
 - **Asking a client twice** — a client contact SHOULD NOT be asked for a
   document or information the firm already holds; repeated requests are the
   client-side pain this product exists to remove.
-- **Reminder noise** — reminders and notifications SHOULD reach only someone who
-  can act on them and stop once the action is done; alerts staff learn to
-  ignore are worse than none.
 - **Building one country into the core** — the core product MUST NOT hard-code
   any country's tax terms, forms, or deadlines; region-neutral is a product
   decision.
