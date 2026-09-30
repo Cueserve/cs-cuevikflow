@@ -429,9 +429,31 @@ The first Australian firms exercise each release before the next starts:
 Canonical object names used across CuevikFlow docs. Informal synonyms in parentheses are
 readable but not canonical — prefer the canonical term in specs.
 
+### Shared terms
+
+- **Thin-core** — the first release; §4 lists what it commits. A §3 feature tagged
+  _Thin-core_ ships in full; _Thin-core (partial)_ ships only the part §4 states.
+- **Roadmap** — planned after thin-core, in the order §7 sets; not committed.
+- **Wish-list** — not planned; an item moves to the roadmap only with a named §2 persona
+  problem.
+- **Tenant** — one business using a Cuevik product, with its data isolated from every
+  other tenant's. In CuevikFlow a tenant is a Firm; in CuevikSync, a Business.
+- **Client slice** — a page or module built for one tenant's need that configuration
+  cannot meet, switched on for that tenant only (§6).
+- **Original date** — the first due or promised date set on a piece of work; kept when the
+  date moves, and used for on-time rates (§6, Hiding slippage).
+- **Past-due** — work whose current due or promised date has passed and is not complete.
+- **Flag** — an advisory signal from a rule or AI that needs no approval; anything else AI
+  produces waits for a person to accept it.
+
+### CuevikFlow terms
+
+- **Firm** — the accounting or tax practice using CuevikFlow; a Tenant.
+- **Roles** — Owner, Manager, and Staff; a client contact has none.
 - **Client lifecycle** — the stages every client record moves through: Lead → Prospect →
   Client → Inactive or Archived.
-- **Lead** — a possible client at first contact.
+- **Lead** — a possible client at first contact, from the web inquiry form or logged by
+  staff.
 - **Prospect** — a lead the firm is actively pursuing; it becomes a Client when the firm
   takes on its work.
 - **Client** — an Organisation or an Individual the firm does work for.
@@ -442,17 +464,23 @@ readable but not canonical — prefer the canonical term in specs.
 - **Organisation** — a client entity that people act for. It MAY link to related
   Organisations, so the firm sees a client group as a whole.
 - **Individual** — a client who is a person rather than an Organisation.
-- **Client contact** — a person acting for an Organisation, or an Individual client. Interacts
-  only through emails and request links; never logs in.
-- **Engagement** — a one-time service contract stating which Jobs a client needs and when.
-  Optional by default; a firm MAY require every Job to belong to one.
-- **Job** — a unit of client work, either one-off or recurring on a schedule.
+- **Client contact** — a person acting for an Organisation, or an Individual client.
+  Interacts only through emails and request links; does not log in.
+- **Engagement** — a service agreement with a client, set up once, stating which Jobs it
+  covers and when. Optional by default; a firm MAY require every Job to belong to one.
+- **Job** — a unit of client work, one-off or recurring, with a due date and a Job status.
+- **Job status** — Not started, In progress, Waiting on client, In review, or Complete; a
+  fixed set in thin-core.
 - **Occurrence** — one scheduled instance of a recurring Job.
 - **Task** — a checklist item on a Job, assigned to a staff member with a due date. Each
   Occurrence of a recurring Job carries its own Tasks.
-- **Template** — a firm-owned Engagement or Job definition that new Engagements and Jobs are
-  built from.
+- **Review** — the four-eyes check: a Job whose template requires it moves to In review and
+  is signed off or sent back by a Manager or Owner other than its Preparer.
+- **Preparer** — the staff member who did the work on a Job.
+- **Template** — a firm-owned Engagement or Job definition that sets a Job's Task
+  checklist, recurrence, due dates relative to the period it covers, and whether it
+  requires review.
 - **Starter library** — Cuevik-supplied, region-neutral templates a firm copies and edits;
   copies are never synced back.
-- **Request** — a request for documents or information that a client contact answers
-  through a link, with no login (informal: "request link").
+- **Request** — a checklist of documents and questions a client contact answers through a
+  secure, expiring link, with no login (informal: "request link").
