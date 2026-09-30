@@ -112,54 +112,89 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 > _Thin-core (partial)_ is committed only in the part §4 states, and _Roadmap_ is not
 > committed.
 
-- **Zero-leak inquiry capture** _(Roadmap)_ — a firm web inquiry form that creates a Lead
-  automatically, and a quick way for staff to log phone, email, and walk-in inquiries, so
-  every new-client inquiry becomes a Lead and none is lost.
-- **Complete client record** _(Thin-core)_ — one record per lead, prospect, and client
-  (organisation or individual) from first contact to Inactive or Archived,
-  showing who acts for each organisation and which organisations form a group,
-  so any staff member can pick up any client.
-- **Work-to-deadline tracking** _(Thin-core)_ — service contracts that set out which jobs
-  a client needs and when; jobs that recur on schedule with task checklists; and
-  comments, @mentions, and notifications on the work, so recurring work sets itself
-  up and the team discusses it where it happens.
-- **Four-eyes sign-off** _(Thin-core)_ — manager review and sign-off before a job is complete, so
-  nothing is marked done unreviewed.
-- **Reusable job templates** _(Thin-core)_ — firm-owned Engagement and Job templates plus a Cuevik starter
-  library the firm copies and adapts, so every job of the same kind runs the
-  same way.
-- **Deadline early warning** _(Roadmap)_ — AI-assisted deadline checks that warn assignees
-  and escalate to managers as due dates approach or pass, using the at-risk detection in
-  Human-approved AI, so deadlines are caught before they are missed. The thin-core release
-  lists past-due jobs on Firm work at a glance.
-- **No-login client requests** _(Roadmap)_ — requests for documents and information
-  that client contacts answer through a link without logging in, with automatic
-  reminders to the client until answered and files kept against the client and
-  job, replacing email chasing and scattered attachments.
-- **Communication center** _(Thin-core (partial))_ — templated email to client contacts, with every
-  message, request, call, meeting, and note logged against the client, and
-  two-way email with replies filed automatically by AI, so the firm's full history with a
-  client is in one place.
-- **Firm work at a glance** _(Thin-core (partial))_ — personal and firm-wide dashboards
-  (deadlines, overdue work, at-risk jobs, team workload) plus exportable reports
-  on deadline compliance, workload, and throughput over time, so owners see
-  both today's state and the trend.
-- **Human-approved AI** _(Roadmap)_ — at-risk job detection, assignee suggestions, classification
-  of client uploads, extraction of client-document data into firm-defined
-  outputs, and summaries and drafts, all reviewed by staff before use, removing
-  manual sorting, re-keying, and first-draft writing.
-- **Need-to-see access** _(Thin-core)_ — Owner, Manager, and Staff roles; sensitive fields
-  restricted by role; and an audit trail of who changed what and when, so each
-  person sees what their job needs and the firm can answer "who changed this?"
-- **Firm-defined fields & branding** _(Roadmap)_ — custom fields on clients, jobs, and tasks, and firm
-  branding on client-facing emails and request links, so firms adapt CuevikFlow
-  to how they work without custom builds.
-- **Spreadsheet-to-live onboarding** _(Roadmap)_ — guided setup and bulk import from
-  existing spreadsheets, so a firm moves off spreadsheets without re-typing its client
-  list.
-- **No-chase automation** _(Roadmap)_ — firm-defined rules that trigger actions on events
-  (document received, job completed, due date approaching), so hand-offs happen without
-  someone remembering them.
+- **Zero-leak inquiry capture** _(Roadmap)_ — every new-client inquiry, from the firm's web
+  inquiry form or logged by staff from phone, email, or walk-in, becomes one Lead that keeps
+  its source; an inquiry from an existing client or Lead is matched to that record instead
+  of creating a duplicate. So no prospective client is lost or entered twice.
+- **Complete client record** _(Thin-core)_ — one record for each Lead, Prospect, and Client,
+  as an Organisation or an Individual, from first contact to Inactive or Archived. It shows
+  who acts for each Organisation and which Organisations form a group, every Engagement,
+  Job, file, and message is attached to it, and likely duplicates are flagged. So any staff
+  member can pick up any client without a handover.
+- **Work-to-deadline tracking** _(Thin-core)_ — every piece of client work is a Job with a
+  due date and a status (Not started, In progress, Waiting on client, In review, Complete),
+  one-off or recurring, broken into Tasks assigned to staff with their own due dates. Each
+  occurrence of a recurring Job is created on schedule with its Task checklist, and
+  past-due Jobs are marked. A Job MAY sit under an Engagement that sets out what a client
+  needs and when — optional unless the firm requires it. Comments, @mentions, and
+  notifications keep discussion on the work. So recurring work sets itself up, and everyone
+  sees what is due, who has it, and where it stands.
+- **Four-eyes sign-off** _(Thin-core)_ — a Job that requires review moves to In review when
+  its work is done, and only a Manager or Owner other than the person who did the work can
+  sign it off as Complete or send it back with comments; who signed off, and when, is
+  recorded. The firm sets which Jobs require review in their templates. So work that needs
+  a second pair of eyes always gets one, and every sign-off can be shown later.
+- **Reusable job templates** _(Thin-core)_ — firm-owned Engagement and Job templates, each
+  setting a Job's Task checklist, recurrence, due dates relative to the period it covers,
+  and whether it requires review; a firm can also copy and adapt templates from a region-neutral Cuevik starter
+  library. A copied template is the firm's own and changes only when the firm edits it. So
+  every job of the same kind runs the same way, without being rebuilt each cycle.
+- **Deadline early warning** _(Roadmap)_ — AI checks each Job's progress against its due
+  date (Tasks done, time left, and whether it is waiting on the client) and warns the
+  assignee, then escalates to a manager, when a Job is at risk or past due. Warnings reach
+  only someone who can act, stop once the Job is back on track, and never reach the client.
+  It uses the at-risk detection in Human-approved AI and builds on the past-due list in
+  Firm work at a glance. So deadlines are caught before they are missed.
+- **No-login client requests** _(Roadmap)_ — staff send a client contact a checklist of
+  documents and questions through a secure link that is unique to that request and
+  contact, expires, can be revoked, and needs no login. The contact can answer part now
+  and the rest later; automatic reminders go out until every item is answered, then stop.
+  Answers and files are kept against the client and the Job, and the link and its emails
+  carry the firm's name and logo so clients trust them. Before sending, staff see what the
+  firm already holds, so a client is not asked twice. So documents arrive in one place
+  instead of email chains and scattered attachments.
+- **Communication center** _(Thin-core (partial))_ — one timeline per client of every email,
+  request, call, meeting, and note, with templated email sent to client contacts from
+  CuevikFlow. Two-way email sync files mail from known contacts by their address; for
+  unknown senders, AI suggests the client and staff confirm. So the firm's full history
+  with a client is in one place, and anyone can see what was said before they reply. The
+  thin-core release ships templated outbound email, logged automatically, and a log where
+  staff record calls, meetings, and notes by hand.
+- **Firm work at a glance** _(Thin-core (partial))_ — a personal view of each person's own
+  Jobs and Tasks, and a firm-wide view for owners and managers of every Job's status,
+  upcoming deadlines, past-due Jobs, at-risk Jobs, and team workload, plus exportable
+  reports on deadline compliance, workload, and throughput over time. So owners see where
+  every job stands today, and the trend, without asking anyone. The thin-core release ships
+  both views with Job status, upcoming deadlines, past-due Jobs, and team workload.
+- **Human-approved AI** _(Roadmap)_ — AI that flags Jobs at risk of missing their due date,
+  suggests assignees, sorts client uploads, extracts client-document data into firm-defined
+  outputs, suggests the client for unfiled email, and drafts summaries and messages. Flags
+  are advisory; everything else waits for staff to accept it, so nothing reaches a client,
+  changes a record, or becomes a figure the firm relies on until they do. So staff stop
+  sorting, re-keying, and writing first drafts, while the firm keeps control of every
+  output.
+- **Need-to-see access** _(Thin-core)_ — Owner, Manager, and Staff roles, with sensitive
+  fields restricted by role and every restriction enforced by the system, not just hidden
+  on screen. Each firm's data is isolated from every other firm's, and an audit trail
+  records who changed what and when. So each person sees only what their job needs, and
+  the firm can always answer "who changed this?"
+- **Firm-defined fields** _(Roadmap)_ — the firm adds custom fields to clients, Jobs, and
+  Tasks (text, number, date, or a choice list) and defines its own Job statuses in place of
+  the fixed set, with no code. So a firm shapes CuevikFlow to how it works.
+- **Spreadsheet-to-live onboarding** _(Roadmap)_ — the firm imports its clients and their
+  contacts from comma-separated values (CSV) or Excel files, maps its columns to
+  CuevikFlow's fields, and sees a preview with errors and likely duplicates flagged before
+  anything is saved; an import can be undone. Guided setup then walks the firm through
+  inviting staff, copying templates from the starter library, and scheduling its first
+  recurring Job. So a firm moves off spreadsheets without re-typing its client list or
+  needing Cuevik's help.
+- **No-chase automation** _(Roadmap)_ — firm-defined rules in the form "when this happens,
+  if this is true, do this": for example, when a client document arrives, move the Job to
+  In progress and notify its assignee; when every Task on a Job is done, move it to In
+  review and notify a manager. Rules act on the firm's own work (notify, assign, create
+  Tasks, change Job status) and never message a client, and every change a rule makes is
+  recorded in the audit trail under that rule. So hand-offs happen without anyone having to
+  remember them.
 
 ## 3A. Decision Placeholders
 
@@ -168,20 +203,23 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 ### In scope — thin-core release (committed)
 
 - Leads, prospects, and clients as organisations or individuals, moving through
-  Lead → Prospect → Client → Inactive or Archived.
+  Lead → Prospect → Client → Inactive or Archived; likely duplicates flagged when a record
+  is created.
 - People linked to the organisations they act for; organisations linked to
   related organisations.
 - Engagements as one-time service contracts; one-off and recurring Jobs; Task
-  checklists. Engagements are optional by default; a firm MAY make them
+  checklists. Each Job carries a status from a fixed set: Not started, In progress, Waiting
+  on client, In review, Complete. Engagements are optional by default; a firm MAY make them
   mandatory.
-- Firm-owned Engagement and Job templates, and a region-neutral Cuevik starter
-  library that firms copy; copies are never synced after copying.
+- Firm-owned Engagement and Job templates that set a Job's Task checklist, recurrence,
+  due dates relative to the period it covers, and whether it requires review; a region-neutral Cuevik starter library
+  that firms copy; copies are never synced after copying.
 - Basic file upload and download on clients and jobs.
 - Templated outbound email to client contacts; a per-client communication log.
-- Comments, @mentions, and in-app notifications; manager review and sign-off on
-  jobs.
-- Personal and firm-wide dashboards: upcoming deadlines, a list of past-due jobs, and team
-  workload.
+- Comments, @mentions, and in-app notifications; review and sign-off by a Manager or
+  Owner other than the preparer, on Jobs whose template requires it.
+- Personal and firm-wide dashboards: every Job's status, upcoming deadlines, a list of
+  past-due jobs, and team workload.
 - Owner, Manager, and Staff roles; role-based and field-level access; an audit
   trail.
 
@@ -192,19 +230,22 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 ### Planned roadmap after thin-core (timing TBD)
 
 - A web inquiry form that creates exactly one Lead per submission, with none dropped;
-  manual logging of phone, email, and walk-in inquiries.
+  manual logging of phone, email, and walk-in inquiries; matching an inquiry to an existing
+  client or Lead instead of creating a duplicate.
 - AI-assisted deadline warnings to assignees and escalation to managers as due dates
   approach or pass.
-- No-login link requests for client documents and information, with automatic reminders
-  to client contacts until answered.
-- Guided setup and bulk import from comma-separated values (CSV) and Excel files.
+- No-login link requests for client documents and information through secure, expiring
+  links, with automatic reminders to client contacts until answered.
+- Guided setup and bulk import from CSV and Excel files.
 - Firm-defined workflow automation rules.
-- Two-way email sync with AI filing of replies.
+- Two-way email sync that files mail from known contacts by address; AI suggests the client
+  for unknown senders, and staff confirm.
 - Exportable reports on deadline compliance, workload, and throughput over time.
 - AI: at-risk job detection (and at-risk jobs on dashboards), assignee suggestions,
   upload classification, extraction of client-document data into firm-defined outputs,
   and summaries and drafts. Staff review all AI output before use.
-- Custom fields; firm branding on client-facing emails and request links.
+- Custom fields and firm-defined Job statuses.
+- Firm branding on client-facing emails and request links.
 
 ### Out of scope
 
@@ -243,7 +284,8 @@ needs a named problem for a §2 persona.
 - E-signature.
 - Multi-location and branch support — the firms CuevikFlow starts with operate as one
   unit; larger firms may need it.
-- Proposal to engagement — proposals and engagement acceptance that convert a prospect into a client.
+- Proposal to engagement — a proposal sets out services and fees; when the prospect
+  accepts it (see E-signature), it becomes an Engagement and the Prospect becomes a Client.
 - Time and billing — time logged against jobs and tasks, and invoices raised from jobs and
   time.
 - Integrations — accounting-software connection and two-way calendar sync with Google and
