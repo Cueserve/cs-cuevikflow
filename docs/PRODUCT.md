@@ -137,24 +137,12 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
   of client uploads, extraction of client-document data into firm-defined
   outputs, and summaries and drafts, all reviewed by staff before use, removing
   manual sorting, re-keying, and first-draft writing.
-- **Proposals** — proposals and engagement acceptance that convert a prospect
-  into a client, so winning work and starting work happen in the same system.
-- **Time and billing** — time logged against jobs and tasks, and invoices raised
-  from jobs and time, so firms bill from the same record they work from.
 - **Team, roles and access** — Owner, Manager, and Staff roles; sensitive fields
   restricted by role; and an audit trail of who changed what and when, so each
   person sees what their job needs and the firm can answer "who changed this?"
 - **Firm configuration** — custom fields on clients, jobs, and tasks, and firm
   branding on client-facing emails and request links, so firms adapt CuevikFlow
   to how they work without custom builds.
-- **Workflow automation** — firm-defined rules that trigger actions on events
-  (document received, job completed, due date approaching), so hand-offs happen
-  without someone remembering them.
-- **Integrations** — connection to the firm's accounting software and two-way
-  calendar sync with Google and Microsoft 365, so client records and deadlines
-  stay aligned with the tools the firm already uses.
-- **Mobile apps** — installable mobile apps for firm staff, so staff can check and
-  update work away from a desk.
 - **Firm onboarding** — guided setup and bulk import from existing
   spreadsheets, so a firm moves off spreadsheets without re-typing its client
   list.
@@ -187,15 +175,9 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 - AI: at-risk job detection, assignee suggestions, upload classification,
   extraction of client-document data into firm-defined outputs, and summaries
   and drafts. Staff review all AI output before use.
-- Proposals and engagement acceptance that convert a prospect into a client.
-- Time tracking; invoices raised from jobs and time.
 - Owner, Manager, and Staff roles; role-based and field-level access; an audit
   trail.
 - Custom fields; firm branding on client-facing emails and request links.
-- Firm-defined workflow automation rules.
-- Accounting-software integration; two-way calendar sync with Google and
-  Microsoft 365.
-- Installable mobile apps for firm staff.
 - Guided setup and bulk import from comma-separated values (CSV) and Excel
   files.
 
@@ -215,8 +197,7 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
   tasks; client contact stays on email and links.
 - Marketing: campaigns, newsletters, surveys, and referral or upsell programmes
   — CuevikFlow manages relationships and work, not marketing.
-- Payment collection — CuevikFlow raises invoices; payments are handled outside
-  it.
+- Payment collection — payments are handled outside CuevikFlow.
 - Tax-software integration.
 - White-label (custom domains, removing Cuevik branding) — firm branding on
   emails and links is in scope.
@@ -229,13 +210,21 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 
 ### Wish-list (not committed)
 
-Each item below is out of scope until PRODUCT.md is updated to move it in.
+Each item below is out of scope until PRODUCT.md is updated to move it in. Moving one in
+needs a named problem for a §2 persona.
 
 - Client mobile app — requires a client login, which the product currently
   excludes; revisit §2 and the no-login decision first.
 - E-signature.
 - Multi-location and branch support — the firms CuevikFlow starts with operate as one
   unit; larger firms may need it.
+- Proposals — proposals and engagement acceptance that convert a prospect into a client.
+- Time and billing — time logged against jobs and tasks, and invoices raised from jobs and
+  time.
+- Workflow automation — firm-defined rules that trigger actions on events.
+- Integrations — accounting-software connection and two-way calendar sync with Google and
+  Microsoft 365.
+- Staff mobile apps — installable mobile apps for firm staff.
 
 ## 5. Success Criteria
 
@@ -301,7 +290,8 @@ readable but not canonical — prefer the canonical term in specs.
 - **Client lifecycle** — the stages every client record moves through: Lead → Prospect →
   Client → Inactive or Archived.
 - **Lead** — a possible client at first contact.
-- **Prospect** — a lead the firm is actively pursuing; a Proposal converts it into a Client.
+- **Prospect** — a lead the firm is actively pursuing; it becomes a Client when the firm
+  takes on its work.
 - **Client** — an Organisation or an Individual the firm does work for.
 - **Inactive** — a Client the firm is not currently working for. The record stays visible
   and can be reactivated.
