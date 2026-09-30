@@ -106,45 +106,50 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 
 ## 3. Features
 
-- **Client relationships** — one record per lead, prospect, and client
+> Features describe the full product model, including roadmap intent. Only §4 "In scope —
+> thin-core release" is committed. Each feature is tagged: _Thin-core_ is committed in full,
+> _Thin-core (basic)_ is committed only at the depth §4 states, and _Roadmap_ is not
+> committed.
+
+- **Client relationships** _(Thin-core)_ — one record per lead, prospect, and client
   (organisation or individual) from first contact to Inactive or Archived,
   showing who acts for each organisation and which organisations form a group,
   so any staff member can pick up any client.
-- **Engagements and recurring jobs** — service contracts that set out which jobs
+- **Engagements and recurring jobs** _(Thin-core)_ — service contracts that set out which jobs
   a client needs and when; jobs that recur on schedule with task checklists; and
   comments, @mentions, and notifications on the work, so recurring work sets itself
   up and the team discusses it where it happens.
-- **Review and sign-off** — manager review and sign-off before a job is complete, so
+- **Review and sign-off** _(Thin-core)_ — manager review and sign-off before a job is complete, so
   nothing is marked done unreviewed.
-- **Templates** — firm-owned Engagement and Job templates plus a Cuevik starter
+- **Templates** _(Thin-core)_ — firm-owned Engagement and Job templates plus a Cuevik starter
   library the firm copies and adapts, so every job of the same kind runs the
   same way.
-- **Deadline reminders and escalation** — reminders to assignees and escalation
+- **Deadline reminders and escalation** _(Thin-core)_ — reminders to assignees and escalation
   to managers as due dates approach or pass, so deadlines are caught before they
   are missed.
-- **Client requests and documents** — requests for documents and information
+- **Client requests and documents** _(Thin-core)_ — requests for documents and information
   that client contacts answer through a link without logging in, with automatic
   reminders to the client until answered and files kept against the client and
   job, replacing email chasing and scattered attachments.
-- **Client communication** — templated email to client contacts, with every
+- **Client communication** _(Thin-core (basic))_ — templated email to client contacts, with every
   message, request, call, meeting, and note logged against the client, and
   two-way email with replies filed automatically by AI, so the firm's full history with a
   client is in one place.
-- **Work visibility and reporting** — personal and firm-wide dashboards
+- **Work visibility and reporting** _(Thin-core (basic))_ — personal and firm-wide dashboards
   (deadlines, overdue work, at-risk jobs, team workload) plus exportable reports
   on deadline compliance, workload, and throughput over time, so owners see
   both today's state and the trend.
-- **AI assistance** — at-risk job detection, assignee suggestions, classification
+- **AI assistance** _(Roadmap)_ — at-risk job detection, assignee suggestions, classification
   of client uploads, extraction of client-document data into firm-defined
   outputs, and summaries and drafts, all reviewed by staff before use, removing
   manual sorting, re-keying, and first-draft writing.
-- **Team, roles and access** — Owner, Manager, and Staff roles; sensitive fields
+- **Team, roles and access** _(Thin-core)_ — Owner, Manager, and Staff roles; sensitive fields
   restricted by role; and an audit trail of who changed what and when, so each
   person sees what their job needs and the firm can answer "who changed this?"
-- **Firm configuration** — custom fields on clients, jobs, and tasks, and firm
+- **Firm configuration** _(Roadmap)_ — custom fields on clients, jobs, and tasks, and firm
   branding on client-facing emails and request links, so firms adapt CuevikFlow
   to how they work without custom builds.
-- **Firm onboarding** — guided setup and bulk import from existing
+- **Firm onboarding** _(Thin-core)_ — guided setup and bulk import from existing
   spreadsheets, so a firm moves off spreadsheets without re-typing its client
   list.
 
@@ -152,7 +157,7 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 
 ## 4. Scope (In / Out)
 
-### In scope
+### In scope — thin-core release (committed)
 
 - Leads, prospects, and clients as organisations or individuals, moving through
   Lead → Prospect → Client → Inactive or Archived.
@@ -167,20 +172,27 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
   to client contacts for outstanding requests.
 - No-login link requests for client documents and information; basic file
   upload and download on clients and jobs.
-- Templated outbound email to client contacts; a per-client communication log;
-  two-way email sync with AI filing of replies.
+- Templated outbound email to client contacts; a per-client communication log.
 - Comments, @mentions, and in-app notifications; manager review and sign-off on
   jobs.
-- Personal and firm-wide dashboards; exportable reports on deadline compliance,
-  workload, and throughput.
-- AI: at-risk job detection, assignee suggestions, upload classification,
-  extraction of client-document data into firm-defined outputs, and summaries
-  and drafts. Staff review all AI output before use.
+- Personal and firm-wide dashboards: deadlines, overdue work, and team workload.
 - Owner, Manager, and Staff roles; role-based and field-level access; an audit
   trail.
-- Custom fields; firm branding on client-facing emails and request links.
 - Guided setup and bulk import from comma-separated values (CSV) and Excel
   files.
+
+> **Commitment rule:** This section is the only committed scope. Everything else in this
+> document, including the roadmap below and every §3 feature tagged Roadmap, is intent and
+> becomes commitment only when promoted into an approved PRD.
+
+### Planned roadmap after thin-core (timing TBD)
+
+- Two-way email sync with AI filing of replies.
+- Exportable reports on deadline compliance, workload, and throughput over time.
+- AI: at-risk job detection (and at-risk jobs on dashboards), assignee suggestions,
+  upload classification, extraction of client-document data into firm-defined outputs,
+  and summaries and drafts. Staff review all AI output before use.
+- Custom fields; firm branding on client-facing emails and request links.
 
 ### Out of scope
 
@@ -201,7 +213,7 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
 - Payment collection — payments are handled outside CuevikFlow.
 - Tax-software integration.
 - White-label (custom domains, removing Cuevik branding) — firm branding on
-  emails and links is in scope.
+  emails and links is on the roadmap.
 - Knowledge base, document co-editing, whiteboards, and staff training.
 - Process mining and robotic process automation (RPA).
 - The firm's own human resources (HR), payroll, and finances.
@@ -229,6 +241,8 @@ needs a named problem for a §2 persona.
 
 ## 5. Success Criteria
 
+### Thin-Core Release Outcomes (Committed)
+
 - **Time to value** — a new firm imports its client list and has its first
   recurring Job scheduled within 60 minutes of sign-up, without Cuevik help.
 - **Recurrence reliability** — 100% of scheduled Job occurrences are created on
@@ -244,11 +258,14 @@ needs a named problem for a §2 persona.
 - **Spreadsheet replacement** — by day 60, the firm confirms it no longer uses a
   spreadsheet or inbox to track client jobs, and at least 80% of its staff use
   CuevikFlow in any given week.
+- **Commercial** — 10 firms on paid subscriptions within 6 months of general
+  availability, with monthly firm churn at or below 3%.
+
+### Post-Thin-Core Outcomes (Roadmap Targets)
+
 - **AI acceptance** — at least 90% of AI extraction outputs are accepted by
   staff with no field corrections, and at least 70% of assignee suggestions are
   accepted unchanged.
-- **Commercial** — 10 firms on paid subscriptions within 6 months of general
-  availability, with monthly firm churn at or below 3%.
 
 ## 6. Anti-Patterns
 
