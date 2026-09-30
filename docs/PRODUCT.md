@@ -72,23 +72,13 @@ CuevikFlow must let a small accounting firm (2–20 staff):
 
 ### Description
 
-The firm records each lead, prospect, and client as an organisation or an
-individual and moves it through Lead → Prospect → Client → Inactive or Archived.
-People link to the organisations they act for, and organisations link to related
-organisations, so the firm sees a client group as a whole. An Engagement is a
-one-time service contract stating which Jobs a client needs and when; Jobs
-recur on a schedule, and each occurrence carries a checklist of Tasks assigned
-to staff with due dates. Engagements are optional by default, and a firm MAY
-require every Job to belong to one. Firms build Engagements and Jobs from their
-own templates or copy and edit a Cuevik-supplied starter library. CuevikFlow
-reminds assignees and escalates to managers as due dates approach or pass.
-Staff email client contacts from templates and request documents and
-information through links that need no client login; every exchange is logged
-against the client. Artificial intelligence (AI) flags at-risk jobs, suggests
-assignees, classifies client uploads, extracts client-document data into
-firm-defined outputs, and summarises and drafts — staff review every AI output
-before use. Dashboards show each person their work and owners firm-wide
-deadlines, overdue work, and workload.
+A firm keeps every Lead, Prospect, and Client in CuevikFlow and runs its client work as
+Jobs — one-off, or recurring on a schedule with a Task checklist on each Occurrence. Staff
+collect documents and information through Requests that client contacts answer without
+logging in, and every email, Request, and note is logged against the Client. Reminders and
+escalation keep each deadline in front of the person who owns it, and dashboards give the
+owner the state of every Job. AI flags risk, sorts and extracts client uploads, and drafts;
+staff review every output before use.
 
 ## 2. Target Users
 
@@ -299,3 +289,33 @@ Each item below is out of scope until PRODUCT.md is updated to move it in.
 ## 7. Roadmap
 
 ## Glossary
+
+Canonical object names used across CuevikFlow docs. Informal synonyms in parentheses are
+readable but not canonical — prefer the canonical term in specs.
+
+- **Client lifecycle** — the stages every client record moves through: Lead → Prospect →
+  Client → Inactive or Archived.
+- **Lead** — a possible client at first contact.
+- **Prospect** — a lead the firm is actively pursuing; a Proposal converts it into a Client.
+- **Client** — an Organisation or an Individual the firm does work for.
+- **Inactive** — a Client the firm is not currently working for. The record stays visible
+  and can be reactivated.
+- **Archived** — a Client relationship that has ended. The record is hidden from day-to-day
+  views and is read-only.
+- **Organisation** — a client entity that people act for. It MAY link to related
+  Organisations, so the firm sees a client group as a whole.
+- **Individual** — a client who is a person rather than an Organisation.
+- **Client contact** — a person acting for an Organisation, or an Individual client. Interacts
+  only through emails and request links; never logs in.
+- **Engagement** — a one-time service contract stating which Jobs a client needs and when.
+  Optional by default; a firm MAY require every Job to belong to one.
+- **Job** — a unit of client work, either one-off or recurring on a schedule.
+- **Occurrence** — one scheduled instance of a recurring Job.
+- **Task** — a checklist item on a Job, assigned to a staff member with a due date. Each
+  Occurrence of a recurring Job carries its own Tasks.
+- **Template** — a firm-owned Engagement or Job definition that new Engagements and Jobs are
+  built from.
+- **Starter library** — Cuevik-supplied, region-neutral templates a firm copies and edits;
+  copies are never synced back.
+- **Request** — a request for documents or information that a client contact answers
+  through a link, with no login (informal: "request link").
