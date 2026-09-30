@@ -111,9 +111,10 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
   showing who acts for each organisation and which organisations form a group,
   so any staff member can pick up any client.
 - **Engagements and recurring jobs** — service contracts that set out which jobs
-  a client needs and when; jobs that recur on schedule with task checklists;
-  comments, @mentions, and notifications on the work; and manager review and
-  sign-off before a job is complete, so recurring work sets itself up and
+  a client needs and when; jobs that recur on schedule with task checklists; and
+  comments, @mentions, and notifications on the work, so recurring work sets itself
+  up and the team discusses it where it happens.
+- **Review and sign-off** — manager review and sign-off before a job is complete, so
   nothing is marked done unreviewed.
 - **Templates** — firm-owned Engagement and Job templates plus a Cuevik starter
   library the firm copies and adapts, so every job of the same kind runs the
@@ -126,8 +127,8 @@ the least capacity for heavy setup; firm size is the starting point, not the lim
   reminders to the client until answered and files kept against the client and
   job, replacing email chasing and scattered attachments.
 - **Client communication** — templated email to client contacts, with every
-  message, request, call, meeting, and note logged against the client, and later
-  two-way email filed automatically by AI, so the firm's full history with a
+  message, request, call, meeting, and note logged against the client, and
+  two-way email with replies filed automatically by AI, so the firm's full history with a
   client is in one place.
 - **Work visibility and reporting** — personal and firm-wide dashboards
   (deadlines, overdue work, at-risk jobs, team workload) plus exportable reports
