@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "project": {
+    "owner": "Cueserve",
+    "number": 20,
+    "id": "PVT_kwDOAWKwws4Bn0jz",
+    "statusField": {
+      "id": "PVTSSF_lADOAWKwws4Bn0jzzhmXauI",
+      "options": {
+        "Backlog": "40feac3a",
+        "Blocked": "0cd4f388",
+        "Done": "98236657",
+        "Ready": "5c76395f",
+        "Reviewing": "ae2be21a",
+        "Testing": "47fc9ee4",
+        "Working": "f75ad846"
+      }
+    }
+  },
+  "initiation": {
+    "epic": 5,
+    "stories": {
+      "01-product-concept": 6,
+      "02-product-requirements": 7,
+      "03-architecture": 8,
+      "04-tech-stack": 9,
+      "05-ai-tool-guide": 10,
+      "06-readme": 11,
+      "07-backlog": 12,
+      "08-finalize": 13
+    }
+  }
+}
