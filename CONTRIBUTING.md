@@ -53,20 +53,3 @@ this checklist is the approval. Complete it in the PR before merging any `init/*
 - [ ] The change is in a PR. Nothing was pushed to `main` directly, apart from bootstrap's empty
       initial commit.
 <!-- END INITIATION-ONLY -->
-
-## Review flow
-
-- Every change lands through a pull request (PR) from a branch off `main`.
-- A change is final only when its PR is merged to `main`. Unmerged branches are drafts.
-
-## Commit convention
-
-Use [Conventional Commits](https://www.conventionalcommits.org/): `feat:`, `fix:`, `docs:`, `chore:`, `refactor:`, `test:`, `ci:`.
-
-- Format: `<type>: <imperative summary>` — e.g. `docs: add PRD.md (Step-03)`.
-- One logical change per commit.
-
-## Direct-push rule
-
-- Never push directly to `main`.
-- Never force-push to a shared branch.
