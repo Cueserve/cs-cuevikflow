@@ -1,5 +1,6 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 4,
+  "boardState": "configured",
   "project": {
     "owner": "Cueserve",
     "number": 20,
@@ -24,10 +25,10 @@
       "02-product-requirements": 7,
       "03-architecture": 8,
       "04-tech-stack": 9,
-      "05-ai-tool-guide": 10,
-      "06-readme": 11,
-      "07-backlog": 12,
-      "08-finalize": 13
+      "06-ai-tool-guide": 10,
+      "07-readme": 11,
+      "08-backlog": 12,
+      "09-finalize": 13
     }
   }
 }
